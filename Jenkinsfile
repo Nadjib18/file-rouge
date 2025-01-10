@@ -1,12 +1,8 @@
 pipeline {
     agent any
     stages {
-        stage('Clone repository') {
-            steps {
-                git branch: 'main', url :'https://github.com/Nadjib18/file-rouge.git'
-            }
-        }
-            
+        
+    
         stage('Installer les dependences & build du projet') {
             steps {
                 sh 'nmp install'
