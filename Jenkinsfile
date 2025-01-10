@@ -4,6 +4,7 @@ pipeline {
         stage('Installer les dependences & build du projet') {
             steps {
                 echo "hello world"
+                echo "hello world 2"
             }
         }
         stage('Build depot au DockerHub') {
